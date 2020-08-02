@@ -4,6 +4,7 @@ Created on Fri Jul 10 22:49:32 2020
 #Machine Learning Assignment
 @author: Fatini Azhar
 """
+#The  source of dataset used was based on https://www.kaggle.com/hassanamin/textdb3
 
 import pandas as pd
 import numpy as np
@@ -24,7 +25,7 @@ from keras.preprocessing.sequence import pad_sequences
 
 
 #Load Data
-df = pd.read_csv('C:/Users/Justin Chan/.spyder-py3/Assignment/fake_or_real_news.csv')
+df = pd.read_csv('fake_or_real_news.csv')
 
 #Preprocessing
 df['text'] = df['text'].apply(lambda x: x.lower())
